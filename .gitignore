@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Test.Api/.config
+/Test.Api/.vs
+/Test.Api/bin
+/Test.Api/obj
+/Test.Api/Properties
+/TestApp.Mapper/bin
+/TestApp.Mapper/obj
+/TestApp.Repository/bin
+/TestApp.Repository/obj
+/TestApp.Service/bin
+/TestApp.Service/obj
+/TestApp.WebService/obj
+/.vs/TestApi/FileContentIndex
+/.vs/TestApi/v17
