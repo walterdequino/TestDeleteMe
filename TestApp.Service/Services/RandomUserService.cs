@@ -53,9 +53,11 @@ namespace TestApp.Domain.Services
 
             client.DefaultRequestHeaders.Add("Surtechnology", "6E3F37EF-2DBC-4062-B974-5812DCB0B2AC");
 
-            var toCreate = new { randonUser.Name, randonUser.Login };
+            const string webhookGuid = "752cd500-d356-4cff-a602-a6c3b03be62c";
 
-            var completeUrl = $"https://webhook.link/{randonUser.Id?.Value}";
+            const string completeUrl = $"https://webhook.link/{webhookGuid}";
+
+            var toCreate = new { randonUser.Name, randonUser.Login };
 
             var httpContent = new StringContent(_serializer.Serialize(toCreate), Encoding.UTF8, "application/json");
 
